@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
 body {
     font-family: "Helvetica", sans-serif;
     font-weight: 400;
@@ -67,15 +77,12 @@ img {
 }
 
 .description {
-    /* text-align: center; */
     color: #0078BE;
     font-size: 14pt;
     font-weight: 500;
 }
 
 .btn-primary {
-    
-    /*  */
     background-color: #fff;
     color: #555;
     border: 1px solid #ddd;
@@ -128,6 +135,7 @@ img {
 }
 
 .product-img {
+    flex-grow: 1;
     max-height: 169px;
     margin-bottom: 10px;
     overflow: hidden;
@@ -139,6 +147,10 @@ img {
     font-weight: 500;
     text-transform: uppercase;
 }
+
+/* .product__text {
+    justify-self: flex-start;
+} */
 
 .product__subtitle {
     font-size: 12pt;
