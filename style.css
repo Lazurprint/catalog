@@ -92,6 +92,14 @@ img {
     margin-bottom: 20px;
 }
 
+.video {
+    display: none;
+}
+
+.video--active {
+    display: block;
+}
+
 .btn-group {
     width: 100%;
     padding: 0;

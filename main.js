@@ -1,11 +1,12 @@
-const tabsBtn = document.querySelectorAll('.list-group-item');
+const tabsBtn = document.querySelectorAll('.list__menu');
+const video = document.querySelector('.video');
+const contactsVideo = document.querySelector('.contacts__video');
 const tabsItem = document.querySelectorAll('.products');
 const tabsItemProducts = document.querySelectorAll('.row__products');
 const tabsBtnProducts = document.querySelectorAll('.btn__products');
 const product = document.querySelectorAll('.product');
 const productImg = document.querySelectorAll('.product-img');
 const productText = document.querySelectorAll('.product__text');
-// const productTitle = document.querySelectorAll('.product-title');
 const productDesc = document.querySelectorAll('.product-desc');
 const modal = document.querySelector('.modal');
 const modalItem = document.querySelector('.modal__item');
@@ -13,6 +14,9 @@ const modalItemImg = document.querySelector('.modal__item-img');
 const modalItemDescr = document.querySelector('.modal__item-descr');
 const close = document.querySelector('.close');
 
+contactsVideo.addEventListener('click', ()=> {
+    video.classList.toggle('video--active')
+})
 
 tabsBtn.forEach(function (element) {
     element.addEventListener('click', function (e) {
