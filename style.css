@@ -68,6 +68,11 @@ img {
     width: 100%;
 }
 
+.list {
+    position: sticky;
+    top: 0;
+}
+
 .title h1 {
     display: inline-block;
     color: #0078BE;
