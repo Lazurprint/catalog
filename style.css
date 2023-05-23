@@ -17,14 +17,14 @@ body {
 body::before {
     content: '';
     background-color: #555;
-    background-image: url(img/Image\ from\ wp-s.ru\ 1920x1080.jpg);
+    background-image: url(img/fon.jpg);
     position: fixed;
     background-size: cover;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: .3;
+    opacity: .8;
     z-index: -1;
 }
 
@@ -52,15 +52,28 @@ img {
     font-style: normal;
 }
 
-
-.content {
-    margin-top: 50px;
-}
-
 .header {
+    padding: 10px;
     display: flex;
     margin-bottom: 10px;
     align-items: center;
+    position: relative;
+    /* background-color: #fff; */
+    
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background-image: url(img/rynok-doveritelnogo-upravleniya_0.jpg);s */
+    background-size: cover;
+    background-position-y: 50%;
+    opacity: 0.9;
+    z-index: -1;
 }
 
 .logo {
@@ -75,14 +88,15 @@ img {
 
 .title h1 {
     display: inline-block;
-    color: #0078BE;
+    /* color: #0078BE; */
+    color: #fff;
     text-align: center;
     margin: 0 auto;
     font-weight: bold;
 }
 
 .description {
-    color: #0078BE;
+    color: #fff;
     font-size: 14pt;
     font-weight: 500;
 }
@@ -144,7 +158,8 @@ img {
 }
 
 .product:hover {
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+    /* box-shadow: 0 0 16px rgba(0, 0, 0, 0.5); */
 }
 
 .product-img {
